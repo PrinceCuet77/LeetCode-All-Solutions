@@ -4,11 +4,10 @@ public:
     vector < int > result;
     
     map < int, int > mp;
-    int n = nums.size();
-    for ( int i = 0; i < n; i++ ) {
+    for ( int i = 0; i < nums.size(); i++ ) {
       int count = 0;
       if ( mp[nums[i]] == 0 ) {
-        for ( int j = 0; j < n; j++ ) {
+        for ( int j = 0; j < nums.size(); j++ ) {
           if ( i != j && nums[i] > nums[j] ) {
             count++;
           }
